@@ -1,0 +1,73 @@
+.auth-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+       url(https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29425be9dfb52e3646e955ea3ec6c115&auto=format&fit=crop&w=1832&q=80)
+         white no-repeat fixed;
+     background-size: cover;
+     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.05);
+   }
+   
+.auth-content {
+     background:#fff;
+     width:30%;
+     text-align: center;
+     padding: 50px;
+     border-radius: 3px;
+   }
+
+.auth-content h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+      
+  @media (max-width: 575.98px) {
+    .auth-content {
+      width: 100%;
+      padding: 20px;
+    }
+    .auth-container .auth-content {
+      border-radius: 0;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .auth-content {
+      width: 80%;
+      padding: 30px;
+    }
+    .auth-container .auth-content {
+      border-radius: 0;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .auth-content {
+      width: 70%;
+      padding: 40px;
+    }
+    .auth-container .auth-content {
+      border-radius: 3px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .auth-content {
+      width: 60%;
+      padding: 50px;
+    }
+    .auth-container .auth-content {
+      border-radius: 3px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .auth-content {
+      width: 30%;
+      padding: 50px;
+    }
+    .auth-container .auth-content {
+      border-radius: 3px;
+    }
+  }
+     

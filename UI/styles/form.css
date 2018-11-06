@@ -1,0 +1,42 @@
+.form-content {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .form-btn {
+    margin-top: 20px;
+    margin-bottom: 10px;
+   
+  }
+  
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=number] {
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    outline: none;
+    border-width: 0 0 2px 0px;
+    border-color: #e0e0e0;
+    color: #333;
+  }
+
+  input:focus {
+    outline: 0;
+    opacity: 1;
+    border-color:#E65100;
+  }
+  
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #b4babc;
+    font-size: 16px;
+  }
+  
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #b4babc;
+    font-size: 16px;
+  }
+   
