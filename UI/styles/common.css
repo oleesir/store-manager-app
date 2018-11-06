@@ -1,0 +1,36 @@
+.header {
+    height: 70px;
+    color: #E65100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand a {
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.5s;
+  }
+  
+  .brand a:hover {
+    text-decoration: none;
+    color: #E65100;
+  }
+  
+  .nav-links a {
+    padding: 7px 12px;
+    font-size: 14px;
+  }
+  
+  .footer {
+    text-align: center;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+  }
+
+  .footer p {
+      color: #fff;
+  }
+  
