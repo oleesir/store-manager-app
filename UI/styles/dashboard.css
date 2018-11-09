@@ -1,0 +1,136 @@
+.dashboard-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%  
+}
+
+.duration {
+    width: 90%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px auto 0 auto;
+    padding: 25px 40px;
+    background:#FEFFFE;
+    border: 1px solid #FEFFFE;
+}
+
+.date p {
+    font-weight: bold;
+    color: #525b81;
+}
+
+.time p {
+    font-weight: bold;
+    color: #525b81;
+}
+
+.cards {
+    width: 90%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+}
+
+.dashboard-view .card {
+    width: 30%;
+    height: 200px;
+     margin: 30px 0 0 0;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    color: #fff;
+}
+
+.top {
+    font-size: 50px;
+    margin:60px 0 0 20px; 
+}
+
+.bottom {
+    font-size: 20px;
+    margin:5px 0 0 40px;
+}
+
+.product {
+    background:#0E3E89;
+}
+
+.sales {
+    background:#0F5ACF;
+}
+
+.revenue {
+    background:#3F88F9;
+}
+
+.stock {
+    background:#119BD7;
+}
+
+.attendant {
+    background:#1BB2F3;
+}
+
+    
+@media (max-width: 575.98px) {
+   .cards .card {
+      width: 100%;
+      padding: 20px;
+    }
+
+    .mobile-menu .fas {
+        cursor: pointer;
+        display:block;
+      }
+   
+  }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .cards .card  {
+      width: 80%;
+      padding: 20px;
+    }
+
+    .mobile-menu .fas {
+        cursor: pointer;
+        display:block;
+      }
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .cards .card  {
+      width: 70%;
+      padding: 20px;
+    }
+
+    .mobile-menu .fas {
+        cursor: pointer;
+        display:block;
+      }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .cards .card  {
+      width: 60%;
+      padding: 20px;
+    }
+
+    .mobile-menu .fas {
+        cursor: pointer;
+        display:block;
+      }
+}
+  
+@media (min-width: 1200px) {
+    .cards .card  {
+      width: 30%;
+    }
+ }

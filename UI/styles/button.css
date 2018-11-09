@@ -31,12 +31,12 @@
     transition: border 0.5s, color 0.5s;
   }
   
-  .btn:hover {
+.btn:hover {
     color:#E65100;
     background-color: #fff;
   }
   
-  .btn-block:hover {
+.btn-block:hover {
     color:#E65100;
     border: 2px solid #E65100;
   }

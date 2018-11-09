@@ -3,6 +3,10 @@
 @import url('./form.css');
 @import url('./button.css');
 @import url('./utilities.css');
+@import url('./wrapper-side.css');
+@import url('./wrapper-dashboard.css');
+@import url('./dashboard.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -32,4 +36,18 @@ html {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.wrapper-content {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    background:#FBFBFE;
 }
