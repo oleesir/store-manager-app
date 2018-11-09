@@ -1,9 +1,11 @@
 .header {
-    height: 70px;
+    height: 50px;
     color: #E65100;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 10px 40px;
 }
 
 .brand a {
@@ -13,24 +15,53 @@
     transition: color 0.5s;
   }
   
-  .brand a:hover {
+.brand a:hover {
     text-decoration: none;
     color: #E65100;
   }
   
-  .nav-links a {
+.nav-links a {
     padding: 7px 12px;
     font-size: 14px;
   }
   
-  .footer {
+.footer {
     text-align: center;
     margin: 0;
     height: 60px;
     width: 100%;
   }
 
-  .footer p {
-      color: #fff;
+.footer p {
+      color:#fff;
   }
   
+.main-header {
+    height: 50px;
+    color:#3385dd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+  }
+
+.mobile-menu .fas {
+    cursor: pointer;
+    display: none;
+  }
+
+.logo {
+    font-size: 25px;
+  }
+
+.foot {
+    text-align: center;
+    margin: 0;
+    height: 20px;
+    width: 100%;
+  }
+
+.foot p {
+    color: #3385dd;
+  }
