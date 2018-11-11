@@ -6,6 +6,7 @@
 @import url('./wrapper-side.css');
 @import url('./wrapper-dashboard.css');
 @import url('./dashboard.css');
+@import url('./add-to-cart.css');
 
 * {
     margin: 0;
