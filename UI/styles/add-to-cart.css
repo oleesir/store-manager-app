@@ -1,0 +1,233 @@
+.add-to-cart-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;  
+}
+
+.add-cart {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.add-cart-btn {
+    margin-left: 60px;
+}
+
+#add-to-cart-table, #receipt-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px auto 0 auto;
+}
+
+#add-to-cart-table th, #add-to-cart-table td, #receipt-table th, #receipt-table td {
+    border-bottom: 0.5px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#add-to-cart-table th, #receipt-table th {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color:#fff;
+    color:#525b81;
+}
+
+#add-to-cart-table .fas:hover {
+    color: #3385dd;
+    cursor: pointer;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.amount {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.info {
+    width: 20%;
+    margin-left:60px;
+    margin-top: 30px;
+}
+
+.info input[type=text] {
+    padding:5px;
+    margin-bottom: 3px;
+}
+
+.info-input {
+    margin-top: 5px;
+}
+
+.submit {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.modal {
+    display: none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-cart-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close-span {
+    width: 100%;
+    text-align: right;
+}
+
+h3 {
+    text-align: center;
+    color: #525b81;
+}
+
+.modal-cart-form {
+    width: 100%;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.btn-space {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-receipt-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+}
+
+.receipt-info {
+    margin-left: 60px;
+}
+
+.return {
+    width: 100%;
+    align-items: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 575.98px) {
+.modal-cart-content {
+    width: 100%;
+    padding: 20px;
+}
+
+.info {
+  width: 40%;
+}
+
+.modal-receipt-content {
+    width: 100%;
+    padding: 20px;
+}
+
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px) {
+.modal-cart-content {
+    width: 80%;
+    padding: 30px;
+}
+.info {
+    width: 40%;
+  }
+  
+.modal-receipt-content {
+    width: 0%;
+    padding: 20px;
+}
+
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px) {
+.modal-cart-content {
+    width: 70%;
+    padding: 40px;
+}
+
+.info {
+    width: 30%;
+  }
+  
+.modal-receipt-content {
+    width: 80%;
+    padding: 20px;
+}
+
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.modal-cart-content {
+    width: 60%;
+    padding: 50px;
+}
+
+.info {
+    width: 30%;
+}
+
+.modal-receipt-content {
+    width: 80%;
+    padding: 20px;
+}
+}
+  
+@media (min-width: 1200px) {
+.modal-cart-content {
+    width: 40%;
+    padding: 50px;
+}
+
+.info {
+    width: 30%;
+}
+
+.modal-receipt-content {
+    width: 70%;
+    padding: 20px;
+}
+}

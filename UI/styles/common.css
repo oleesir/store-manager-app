@@ -1,6 +1,6 @@
 .header {
     height: 50px;
-    color: #E65100;
+    color:#3385dd;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,7 +17,7 @@
   
 .brand a:hover {
     text-decoration: none;
-    color: #E65100;
+    color:#3385dd;
   }
   
 .nav-links a {
