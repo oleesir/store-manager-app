@@ -23,7 +23,7 @@
 #add-to-cart-table th, #add-to-cart-table td, #receipt-table th, #receipt-table td {
     border-bottom: 0.5px solid #ddd;
     padding: 16px 0;
-    text-align: left;
+    text-align:center;
 }
 
 #add-to-cart-table th, #receipt-table th {
