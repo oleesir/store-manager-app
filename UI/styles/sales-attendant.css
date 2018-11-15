@@ -1,0 +1,132 @@
+.sales-attendant-view {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+}
+
+
+.add-sales-attendant {
+    margin:70px auto 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.add-sales-attendant .enter-sales-attendant  {
+    width: 30%;
+    padding: 10px 20px;
+}
+
+.overflow-table {
+    overflow-x:scroll;
+    width: 100%;
+}
+
+#sales-attendant-table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 30px auto 0 auto;
+}
+
+#sales-attendant-table th,#sales-attendant-table td {
+    border-bottom: 0.5px solid #ddd;
+    text-align:center;
+    padding: 16px 0;
+}
+
+#sales-attendant-table th {
+    background-color:#fff;
+    color:#525b81;
+}
+
+
+#sales-attendant-table .fas:hover {
+    color: #3385dd;
+    cursor: pointer;
+}
+
+#manage-product-table .act {
+    text-align: center;
+} 
+
+.cell {
+    display: flex;
+    justify-content:space-around;
+}
+
+.sales-attendant-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.top-gender {
+    margin-top: 10px;
+}
+
+
+
+@media (max-width: 575.98px) {
+.add-sales-attendant {
+    display: block;
+    padding: 0 5px;
+}
+
+.add-sales-attendant-btn {
+     margin-bottom:7px;   
+}
+
+.add-sales-attendant .enter-sales-attendant {
+      width: 100%;
+  }
+
+.sales-attendant-content {
+    width: 100%;
+  }
+
+.sales-attendant-btn {
+      margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+.sales-attendant-content {
+    width: 80%;
+    padding: 30px;
+}
+
+.add-sales-attendant .enter-sales-attendant  {
+    width: 50%;
+    padding: 10px 20px;
+}
+}
+      
+@media (min-width: 768px) and (max-width: 991.98px) {
+.sales-attendant-content {
+    width: 70%;
+    padding: 40px;
+}
+
+.add-sales-attendant .enter-sales-attendant  {
+    width: 60%;
+    padding: 10px 20px;
+}
+}
+      
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.sales-attendant-content {
+    width: 60%;
+    padding: 50px;
+}
+}
+      
+@media (min-width: 1200px) {
+.sales-attendant-content {
+    width: 40%;
+    padding: 50px;
+}
+}
+         
