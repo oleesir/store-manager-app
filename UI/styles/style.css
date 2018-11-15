@@ -8,6 +8,7 @@
 @import url('./dashboard.css');
 @import url('./add-to-cart.css');
 @import url('./sales-record.css');
+@import url('./manage-product.css');
 
 * {
     margin: 0;

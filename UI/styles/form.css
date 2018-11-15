@@ -21,6 +21,17 @@
     color: #333;
   }
 
+  select {
+    width: 100%;
+    padding: 40px;
+    font-size: 16px;
+    margin-top: 20px;
+    outline: none;
+    border-width: 0 0 2px 0px;
+    border-color: #e0e0e0;
+    color: #333;
+  }
+
   input:focus {
     outline: 0;
     opacity: 1;
