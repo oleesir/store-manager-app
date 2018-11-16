@@ -67,8 +67,8 @@
 
 @media (max-width: 575.98px) {
 .add-product {
-        display: block;
-        padding: 0 5px;
+    display: block;
+    padding: 0 5px;
     }
 
 .add-product-btn {
@@ -77,6 +77,6 @@
     }
 
 .add-product .enter-product {
-      width: 100%;
+     width: 100%;
   }
 }
