@@ -12,6 +12,9 @@
 <body>
     <div class="wrapper">
         <div class="wrapper-side">
+            <div class="close-span">
+                <span class="close" onclick="closeNav()"><i class="fas fa-times"></i></span>
+            </div>
             <div class="user">
                 <p>I</p>
             </div>
@@ -25,17 +28,17 @@
                 <a href="manage-product.html"><li><i class="fas fa-book-open"></i> Manage product</li></a>
                 <a href="sales-attendant.html"><li><i class="fas fa-user"></i> Sales attendant</li></a>
                 <a href="category.html"><li><i class="fas fa-box"></i> Category</li></a>
-                <a href="available-products"><li><i class="fab fa-product-hunt"></i> Available products</li></a>
+                <a href="available-products.html"><li><i class="fab fa-product-hunt"></i> Available products</li></a>
                 <a href="sign-in.html"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>
             </ul>
         </div>
         <div class="wrapper-content">
             <div class="main-header">
-                    <div class="mobile-menu"><i class="fas fa-bars fa-2x"></i></div>
+                <span class="mobile-menu" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></span>
                     <div class="logo">OLIVE-STORE-MANAGER</div>
                     
             </div>
-            <div class="add-to-cart-view">
+        <div class="add-to-cart-view">
                 <div class="add-cart">
                     <button class="add-cart-btn btn-md btn modal-trigger" data-modal= "#cart-modal">Add to cart</button>
                 </div>
@@ -112,8 +115,8 @@
                         <input type="number" placeholder="Price" class="info-input">
                         <input type="number" placeholder="Amount" class="info-input">
                         <div class="btn-space">
-                        <button class="btn btn-md">Add item</button>
-                        <button class="btn btn-md modal-close-btn">Cancel</button>
+                            <button class="btn btn-md">Add item</button>
+                            <button class="btn btn-md modal-close-btn">Cancel</button>
                         </div>
                     </form>   
 
@@ -133,14 +136,14 @@
                              
                         <div class="modal-receipt-form">
                            <div class="receipt-info">
-                            <p>Sold To: Customer</p>
-                            <p>Time: 9:28AM</p>
-                            <p>Date: 29-0ct-2018</p>
-                            <p>Cashier: Olisa</p>
-                            <p>Receipt No: 123456789</p>
+                                <p>Sold To: Customer</p>
+                                <p>Time: 9:28AM</p>
+                                <p>Date: 29-0ct-2018</p>
+                                <p>Cashier: Olisa</p>
+                                <p>Receipt No: 123456789</p>
                            </div> 
 
-                          <table id="receipt-table">
+                        <table id="receipt-table">
 
                             <tr>
                                 <th>Products</th>
@@ -173,9 +176,9 @@
                                 <td class="amount">N220000</td>
                                 <td></td>
                             </tr>
-                          </table>
+                        </table>
                           <div class="return">
-                          <button class="btn btn-md modal-close-btn">Back</button>
+                                <button class="btn btn-md modal-close-btn">Back</button>
                           </div>
                         </div>
                     </div>
@@ -191,6 +194,7 @@
     </div>
        
     </div>
+    <script src="./js/slide.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

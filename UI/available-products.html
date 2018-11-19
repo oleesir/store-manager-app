@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-    <title>dashboard</title>
+    <title>sales record</title>
 </head>
 <body>
     <div class="wrapper">
@@ -38,39 +38,62 @@
                     <div class="logo">OLIVE-STORE-MANAGER</div>
                     
             </div>
-            <div class="dashboard-view">
-                <div class="duration">
-                    <div class="date">
-                        <p>Date - April 25th 2018</p>
-                    </div>
-                    <div class="time">
-                        <p>Time - 2:18 PM </p>
-                    </div>
-                </div>
-                    <div class="cards">
-                <div class="card product">
-                    <p class="top">50</p>
-                    <p class="bottom">Total Products</p>
-                </div>
-                <div class="card sales">
-                        <p class="top">30</p>
-                        <p class="bottom">Total Sales</p>
-                </div>
-                <div class="card revenue">
-                        <p class="top">N900,000</p>
-                        <p class="bottom">Total Sales</p>
-                </div>
-                <div class="card stock">
-                        <p class="top">5</p>
-                        <p class="bottom">Out Of Stock</p>
-                </div>
-                <div class="card attendant">
-                        <p class="top">10</p>
-                        <p class="bottom">Sales Attendants</p>
-                </div>
-                </div>
+        <div class="available-view">
+               <div class="search-input">
+                   <input type="text" placeholder="Enter product name">
+               </div> 
 
-            </div>
+            <table id="available-products-table">
+                <tr>
+                    <th>Product Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Min-Quantity</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Channel Handbag</td>
+                    <td>20000</td>
+                    <td>700</td>
+                    <td>200</td>
+                    <td>Womens bag</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Apple wristwatch</td>
+                    <td>200000</td>
+                    <td>100</td>
+                    <td>20</td>
+                    <td>Watch</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Gucci Handbag</td>
+                    <td>30000</td>
+                    <td>1000</td>
+                    <td>200</td>
+                    <td>Womens bag</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Prada suit</td>
+                    <td>40000</td>
+                    <td>700</td>
+                    <td>200</td>
+                    <td>Mens suit</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>Samsung s9</td>
+                    <td>120000</td>
+                    <td>700</td>
+                    <td>300</td>
+                    <td>Mobile phones</td>
+                    <td>Available</td>
+                </tr>
+            </table>
+        </div>
             
                  <div class="foot">
                     <p>Olive &copy;2018</p>
@@ -78,8 +101,8 @@
         </div>
     </div>
        
-    </div>
-    <script src="./js/slide.js"></script>
-    <script src="./js/modal.js"></script>
+</div>
+<script src="./js/slide.js"></script>
+<script src="./js/modal.js"></script>
 </body>
 </html>

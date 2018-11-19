@@ -2,8 +2,37 @@
     flex: 1;
     background:#FEFFFE;
     min-height: 100%;
-    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
     box-shadow: 4px 0px 8px #bdbdbd;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+.wrapper-side .close-span {
+    margin-top: 10px;
+    width: 100%;
+    text-align: right;
+    display: none;
+}
+
+.wrapper-side-hide {
+    display: none;
+}
+
+.close {
+    color: #aaaaaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .wrapper-side .user {
@@ -49,26 +78,90 @@
     color: #525b81;
 }
 
-@media (max-width: 575.98px) {
-    .wrapper-side{
-        display: none;
+.wrapper-side-show {
+    display: block;
+    transition: 0.5s;
+}
+
+@media (max-width: 991.98px) {
+    .wrapper {
+        display: block;
+    }
+
+     /* .wrapper-side::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }  */
+
+    .wrapper-side {
+        position: absolute;
+        background:#FEFFFE;
+        min-height: 100%;
+        min-width: 400px;
+        max-width: 400px;
+        box-shadow: 4px 0px 8px #bdbdbd;
+        transition: 0.5s;
+        z-index: 10;
+    }
+
+    .wrapper-side .close-span {
+        display: block;
     }
 }
 
+@media (max-width: 575.98px) {
+    .wrapper-side-show {
+        flex: 4;
+        display: block;
+        transition: 0.5s;
+    
+    }
+
+     .wrapper-side {
+        position: absolute;
+        background:#FEFFFE;
+        min-height: 100%;
+        min-width: 280px;
+        max-width: 280px;
+        box-shadow: 4px 0px 8px #bdbdbd;
+        transition: 0.5s;
+        z-index: 10;
+    }
+
+    .wrapper-side .close-span {
+        display: block;
+    }
+
+}
+/*
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .wrapper-side{
-        display: none;
+    .wrapper-side-show {
+        flex: 3;
+        display: block;
+       
     }
 }
   
   @media (min-width: 768px) and (max-width: 991.98px) {
-    .wrapper-side{
-        display: none;
+    .wrapper-side-show {
+        flex: 3;
+        display: block;
+    
     }
   }
   
   @media (min-width: 992px) and (max-width: 1199.98px) {
-    .wrapper-side{
-        display: none;
+    .wrapper-side-show {
+        flex: 3;
+        display: block;
+    
     }
-  }
+} */
+
