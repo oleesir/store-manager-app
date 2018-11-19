@@ -12,6 +12,9 @@
 <body>
     <div class="wrapper">
         <div class="wrapper-side">
+                <div class="close-span">
+                        <span class="close" onclick="closeNav()"><i class="fas fa-times"></i></span>
+                </div>
             <div class="user">
                 <p>I</p>
             </div>
@@ -25,20 +28,20 @@
                 <a href="manage-product.html"><li><i class="fas fa-book-open"></i> Manage product</li></a>
                 <a href="sales-attendant.html"><li><i class="fas fa-user"></i> Sales attendant</li></a>
                 <a href="category.html"><li><i class="fas fa-box"></i> Category</li></a>
-                <a href="available-products"><li><i class="fab fa-product-hunt"></i> Available products</li></a>
+                <a href="available-products.html"><li><i class="fab fa-product-hunt"></i> Available products</li></a>
                 <a href="sign-in.html"><li><i class="fas fa-sign-out-alt"></i> Logout</li></a>
             </ul>
         </div>
         <div class="wrapper-content">
             <div class="main-header">
-                    <div class="mobile-menu"><i class="fas fa-bars fa-2x"></i></div>
+                    <div class="mobile-menu" onclick="openNav()"><i class="fas fa-bars fa-2x"></i></div>
                     <div class="logo">OLIVE-STORE-MANAGER</div>
                     
             </div>
             <div class="category-view">
                     <div class="add-category">
                         <button class="add-category-btn btn-md btn modal-trigger" data-modal= "#category-modal">Add category</button>
-                       <input type="text" placeholder="Enter product name" class="enter-category">
+                       <input type="text" placeholder="Enter category name" class="enter-category">
                     </div>
 
                     <div class="overflow-table">
@@ -111,6 +114,7 @@
     </div>
        
 </div>
+<script src="./js/slide.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-.sales-record-view {
+.available-view {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -16,33 +16,22 @@
 }
 
 
-#sales-record-table {
+#available-products-table {
     width: 90%;
     border-collapse: collapse;
     margin: 30px auto 0 auto;
 }
 
-#sales-record-table th, #sales-record-table td {
+#available-products-table th, #available-products-table td {
     border-bottom: 0.5px solid #ddd;
     text-align: center;
     padding: 16px 0;
 }
 
-#sales-record-table th {
+#available-products-table th {
     background-color:#fff;
     color:#525b81;
 }
-
-.view-trans {
-    padding:5px 10px;
-    background:#30abf4;
-    color:#fff;
-    border-radius: 3px;
-    cursor: pointer;
-    border:none;
-    outline: none;
-}
-
 
 @media (max-width: 575.98px) {
 .search-input {
@@ -50,3 +39,6 @@
     }
 }
    
+    
+
+

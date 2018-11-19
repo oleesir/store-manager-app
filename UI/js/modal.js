@@ -10,8 +10,6 @@ function openModal(e) {
 
 
 function closeModal(e) {
-  console.log(e);
-
   if (e.target.className === 'modal') {
     e.target.style.display = 'none';
   }

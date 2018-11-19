@@ -11,6 +11,7 @@
 @import url('./manage-product.css');
 @import url('./sales-attendant.css');
 @import url('./category.css');
+@import url('./available-products.css');
 
 * {
     margin: 0;

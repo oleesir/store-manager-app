@@ -92,25 +92,6 @@
     width: 40%;
 }
 
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.close-span {
-    width: 100%;
-    text-align: right;
-}
-
 h3 {
     text-align: center;
     color: #525b81;
@@ -178,7 +159,7 @@ h3 {
 .modal-receipt-content {
     width: 0%;
     padding: 20px;
-}
+ }
 
 }
   
@@ -190,7 +171,7 @@ h3 {
 
 .info {
     width: 30%;
-  }
+ }
   
 .modal-receipt-content {
     width: 80%;
