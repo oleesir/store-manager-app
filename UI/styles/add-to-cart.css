@@ -14,6 +14,11 @@
     margin-left: 60px;
 }
 
+.add-to-cart-view .over-flow {
+    overflow-x: scroll;
+    width: 100%;
+   }
+
 #add-to-cart-table, #receipt-table {
     width: 90%;
     border-collapse: collapse;
@@ -22,7 +27,7 @@
 
 #add-to-cart-table th, #add-to-cart-table td, #receipt-table th, #receipt-table td {
     border-bottom: 0.5px solid #ddd;
-    padding: 16px 0;
+    padding: 16px;
     text-align:center;
 }
 
@@ -131,13 +136,19 @@ h3 {
 }
 
 @media (max-width: 575.98px) {
-.modal-cart-content {
-    width: 100%;
-    padding: 20px;
+.add-cart-btn {
+     margin-left:120px;
 }
 
 .info {
-  width: 40%;
+    width: 100%;
+    padding: 0 20px;
+    margin-left: 0;
+}
+
+.modal-cart-content {
+    width: 100%;
+    padding: 10px 0;
 }
 
 .modal-receipt-content {
@@ -145,6 +156,35 @@ h3 {
     padding: 20px;
 }
 
+.submit {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.add-to-cart-view .over-flow {
+    overflow-x: scroll;
+    width: 100%;
+   }
+
+}
+
+@media (max-width: 575.98px) {
+    .modal-cart-content {
+        width: 100%;
+        padding: 30px;
+    }
+    .info {
+        width: 100%;
+      }
+      
+    .modal-receipt-content .overflow {
+        width: 100%;
+        overflow-x: scroll;
+     }
+    
 }
   
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -157,10 +197,9 @@ h3 {
   }
   
 .modal-receipt-content {
-    width: 0%;
+    width: 100%;
     padding: 20px;
  }
-
 }
   
 @media (min-width: 768px) and (max-width: 991.98px) {

@@ -81,9 +81,37 @@
 
     
 @media (max-width: 575.98px) {
+    .wrapper-content {
+        min-width: 100%;
+    }
+
+    .dashboard-view {
+        display: block;
+       min-width: 100%  
+    }
+    .main-header .logo {
+        font-size: 15px;
+    }
+
+    .main-header .fas {
+        font-size: 15px;
+    }
+
+    .duration {
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
+
+    /* .duration .date p {
+        font-size: 10px;
+    }
+
+    .duration .time p {
+        font-size: 10px; 
+    } */
 .cards .card {
     width: 100%;
-    padding: 20px;
 }
 
 .mobile-menu .fas {

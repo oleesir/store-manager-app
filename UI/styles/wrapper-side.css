@@ -2,9 +2,9 @@
     flex: 1;
     background:#FEFFFE;
     min-height: 100%;
-    min-width: 300px;
+    min-width: 300px; 
     max-width: 300px;
-    box-shadow: 4px 0px 8px #bdbdbd;
+    box-shadow: 4px 0px 8px #efefef;
     transition: 0.5s;
     z-index: 1;
 }
@@ -73,7 +73,8 @@
     text-decoration: none;
 }
 
-.wrapper-side ul li:hover {
+.wrapper-side ul li:hover,
+.wrapper-side .active {
     border-right: 1px solid #525b81;
     color: #525b81;
 }
