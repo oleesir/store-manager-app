@@ -32,7 +32,7 @@
 #sales-attendant-table th,#sales-attendant-table td {
     border-bottom: 0.5px solid #ddd;
     text-align:center;
-    padding: 16px 0;
+    padding: 16px;
 }
 
 #sales-attendant-table th {
@@ -88,7 +88,14 @@
   }
 
 .sales-attendant-btn {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+  }
+
+  .sales-attendant-view .overflow-table {
+    overflow-x: scroll;
+    width: 100%;
+    margin-bottom: 50px;
   }
 }
 
