@@ -1,0 +1,38 @@
+{
+  "name": "store-manager-app",
+  "version": "1.0.0",
+  "description": "store-manager-app",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel server/src -d server/dist",
+    "start": "nodemon ./server/src/index.js --exec babel-node",
+    "test": "mocha",
+    "lint": "eslint \"**/*.js\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleesir/store-manager-app.git"
+  },
+  "author": "olisa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleesir/store-manager-app/issues"
+  },
+  "homepage": "https://github.com/oleesir/store-manager-app#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
