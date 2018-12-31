@@ -1,7 +1,15 @@
 const modalBtns = document.getElementsByClassName('modal-trigger');
 const closeBtns = document.getElementsByClassName('modal-close-btn');
 
-
+/**
+ * Opens the modalß
+ *
+ * @function openModal
+ *
+ * @param {Event} e
+ *
+ * @returns {void}
+ */
 function openModal(e) {
   const selectedModalClass = e.target.dataset.modal;
   const selectedClass = document.querySelector(selectedModalClass);
@@ -9,6 +17,15 @@ function openModal(e) {
 }
 
 
+/**
+ * close the modalß
+ *
+ * @function closeModal
+ *
+ * @param {Event} e
+ *
+ * @returns {void}
+ */
 function closeModal(e) {
   if (e.target.className === 'modal') {
     e.target.style.display = 'none';

@@ -1,3 +1,8 @@
+/**
+ * @function openNav
+ *
+ * @returns {bool} boolean
+ */
 function openNav() {
   const wrapperSide = document.querySelector('.wrapper-side');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -6,7 +11,11 @@ function openNav() {
   wrapperSide.classList.remove('wrapper-side-hide');
   wrapperSide.classList.add('wrapper-side-show');
 }
-
+/**
+ * @function closeNav
+ *
+ * @returns {bool} boolean
+ */
 function closeNav() {
   const wrapperSide = document.querySelector('.wrapper-side');
   const mobileMenu = document.querySelector('.mobile-menu');
@@ -16,6 +25,11 @@ function closeNav() {
   wrapperSide.classList.remove('wrapper-side-show');
 }
 
+/**
+ * @function checkBody
+ *
+ * @returns {bool} boolean
+ */
 function checkBody() {
   if (window.screen.width <= 991.98) {
     closeNav();
