@@ -1,8 +1,8 @@
 import express from 'express';
-import salesRouter from '../routes/sales';
-import productRouter from '../routes/products';
-import categoryRouter from '../routes/categories';
-import attendantRouter from '../routes/salesAttendants';
+import salesRouter from './routes/sales';
+import productRouter from './routes/products';
+import categoryRouter from './routes/categories';
+import attendantRouter from './routes/salesAttendants';
 
 
 const app = express();
