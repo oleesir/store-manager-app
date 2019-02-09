@@ -2,10 +2,11 @@
   "name": "store-manager-app",
   "version": "1.0.0",
   "description": "store-manager-app",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "build": "babel server/src -d server/dist",
-    "start": "nodemon ./server/src/index.js --exec babel-node",
+    "start": "node server/dist/index.js",
+    "dev": "nodemon ./server/src/index.js --exec babel-node",
     "test": "mocha",
     "lint": "eslint \"**/*.js\" --fix"
   },
