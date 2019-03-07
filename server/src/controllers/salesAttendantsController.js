@@ -2,15 +2,15 @@ import salesAttendResponse from '../../dummy_data/salesAttend.json';
 /**
  *
  */
-class SalesattendController {
+class SalesAttendantController {
   /**
      * view all attendants
      * @param {object} req
      * @param {object} res
      * @return {object} returns an object
      */
-  static viewSalesAttend(req, res) {
-    res.json({ data: salesAttendResponse, message: 'attendants found' });
+  static viewSalesAttendants(req, res) {
+    return res.json({ data: salesAttendResponse, message: 'attendants found' });
   }
 
   /**
@@ -19,13 +19,13 @@ class SalesattendController {
  * @param {object} res
  * @return {object} returns an object
  */
-  static getSalesAttendId(req, res) {
-    const salesAttendFind = salesAttendResponse.find(c => c.id === parseInt(req.params.getSalesAttendId, 10));
+  static getSalesAttendantId(req, res) {
+    const findSalesAttendant = salesAttendResponse.find(c => c.id === parseInt(req.params.attendantId, 10));
 
-    if (!salesAttendFind) {
+    if (!findSalesAttendant) {
       return res.status(404).json({ data: 404, error: 'Attentendant not found' });
     }
-    return res.json({ data: salesAttendFind });
+    return res.json({ data: findSalesAttendant });
   }
 
   /**
@@ -34,7 +34,7 @@ class SalesattendController {
    * @param {object} res
    * @return {object} returns an object
    */
-  static addSalesAttend(req, res) {
+  static addSalesAttendants(req, res) {
     const attendant = {
       id: salesAttendResponse.length + 1,
       name: req.body.name
@@ -54,11 +54,11 @@ class SalesattendController {
    * @param {object} res
    *@returns {object} returns an object
    */
-  static updateSalesAttend(req, res) {
-    const salesAttendFind = salesAttendResponse.find(c => c.id === parseInt(req.params.id, 10));
+  static updateSalesAttendant(req, res) {
+    const salesAttendFind = salesAttendResponse.find(c => c.id === parseInt(req.params.attendantId, 10));
 
     if (!salesAttendFind) {
-      res.status(404).json({ status: 404, error: 'attendant not found' });
+      return res.status(404).json({ status: 404, error: 'attendant not found' });
     }
     salesAttendFind.name = req.body.name;
 
@@ -71,18 +71,18 @@ class SalesattendController {
    * @param {object} res
    * @returns {object} returns an object
    */
-  static deleteSalesAttend(req, res) {
-    const salesAttendFind = salesAttendResponse.find(c => c.id === parseInt(req.params.id, 10));
+  static deleteSalesAttendant(req, res) {
+    const salesAttendFind = salesAttendResponse.find(c => c.id === parseInt(req.params.attendantId, 10));
 
     if (!salesAttendFind) {
-      res.status(404).json({ status: 404, error: 'attendant not found' });
+      return res.status(404).json({ status: 404, error: 'attendant not found' });
     }
 
     const findIndex = salesAttendResponse.indexOf(salesAttendFind);
-    salesAttendFind.splice(findIndex, 1);
+    salesAttendResponse.splice(findIndex, 1);
 
     return res.json({ data: salesAttendFind, message: 'Attendant was deleted' });
   }
 }
 
-export default SalesattendController;
+export default SalesAttendantController;

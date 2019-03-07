@@ -1,17 +1,17 @@
 import express from 'express';
-import SalesattendController from '../controllers/salesattendController';
+import SalesAttendantController from '../controllers/salesAttendantsController';
 
 const attendantRouter = express.Router();
 
-attendantRouter.get('/attendants', SalesattendController.viewSalesAttend);
+attendantRouter.get('/', SalesAttendantController.viewSalesAttendants);
 
-attendantRouter.get('/:attendantId', SalesattendController.getSalesAttendId);
+attendantRouter.get('/:attendantId', SalesAttendantController.getSalesAttendantId);
 
-attendantRouter.post('/attendants', SalesattendController.addSalesAttend);
+attendantRouter.post('/', SalesAttendantController.addSalesAttendants);
 
-attendantRouter.put('/:attendantId', SalesattendController.addSalesAttend);
+attendantRouter.put('/:attendantId', SalesAttendantController.updateSalesAttendant);
 
-attendantRouter.delete('/:attendantId', SalesattendController.deleteSalesAttend);
+attendantRouter.delete('/:attendantId', SalesAttendantController.deleteSalesAttendant);
 
 
 export default attendantRouter;

@@ -14,10 +14,6 @@ app.use('/api/v1/categories', categoryRouter);
 app.use('/api/v1/sales', salesRouter);
 app.use('/api/v1/attendants', attendantRouter);
 
-app.get('/', (req, res) => {
-  res.send('hello world');
-});
-
 
 const port = process.env.PORT || 3000;
 

@@ -1,1 +1,3 @@
+[![Build Status](https://travis-ci.com/oleesir/store-manager-app.svg?branch=develop)](https://travis-ci.com/oleesir/store-manager-app) [![Coverage Status](https://coveralls.io/repos/github/oleesir/store-manager-app/badge.svg?branch=ch-api-test-163842855)](https://coveralls.io/github/oleesir/store-manager-app?branch=ch-api-test-163842855) [![Maintainability](https://api.codeclimate.com/v1/badges/da4623f2ebfb5fe0bf96/maintainability)](https://codeclimate.com/github/oleesir/store-manager-app/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/da4623f2ebfb5fe0bf96/test_coverage)](https://codeclimate.com/github/oleesir/store-manager-app/test_coverage)
+
 # store-manager-app

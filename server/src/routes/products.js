@@ -4,9 +4,9 @@ import ProductController from '../controllers/ProductController';
 
 const productRouter = express.Router();
 
-productRouter.get('/', ProductController.viewProducts);
+productRouter.get('/', ProductController.viewAllProducts);
 
-productRouter.get('/:productId', ProductController.getProductId);
+productRouter.get('/:productId', ProductController.getProduct);
 
 productRouter.post('/', ProductController.addProduct);
 

@@ -7,8 +7,10 @@
     "build": "babel server/src -d server/dist",
     "start": "node server/dist/index.js",
     "dev": "nodemon ./server/src/index.js --exec babel-node",
-    "test": "mocha",
-    "lint": "eslint \"**/*.js\" --fix"
+    "test": "mocha --require @babel/register server/tests/tests.test.js --exit",
+    "test:coverage": "nyc --reporter=text --reporter=json --reporter=lcov mocha --require @babel/register server/tests/tests.test.js --exit",
+    "lint": "eslint \"**/*.js\" --fix",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -21,19 +23,26 @@
   },
   "homepage": "https://github.com/oleesir/store-manager-app#readme",
   "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
     "express": "^4.16.4"
   },
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
     "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "coveralls": "^3.0.3",
     "eslint": "^5.9.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "mocha": "^5.2.0",
-    "nodemon": "^1.18.7"
+    "nodemon": "^1.18.7",
+    "nyc": "^13.3.0",
+    "supertest": "^3.4.2"
   },
   "directories": {
-    "test": "test"
+    "server/tests": "mocha"
   }
 }
