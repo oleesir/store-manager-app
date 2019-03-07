@@ -86,7 +86,7 @@ class CategoriesController {
     const findIndex = categoryResponse.indexOf(catFind);
     categoryResponse.splice(findIndex, 1);
 
-    return res.json({ data: findIndex, message: 'category was deleted' });
+    return res.json({ data: catFind, message: 'category was deleted' });
   }
 }
 

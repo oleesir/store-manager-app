@@ -9,7 +9,7 @@ class ProductController {
    * @param {Object} res
    * @return {Object} returns an object
    */
-  static viewProducts(req, res) {
+  static viewAllProducts(req, res) {
     return res.json({ data: productResponse, message: 'product found!!!' });
   }
 
@@ -19,13 +19,13 @@ class ProductController {
    * @param {Object} res
    * @return {Object} returns an object
    */
-  static getProductId(req, res) {
-    const prodFind = productResponse.find(c => c.id === parseInt(req.params.productId, 10));
+  static getProduct(req, res) {
+    const findProduct = productResponse.find(c => c.id === parseInt(req.params.productId, 10));
 
-    if (!prodFind) {
+    if (!findProduct) {
       return res.status(404).json({ status: 404, error: 'product not found' });
     }
-    return res.json({ data: prodFind });
+    return res.json({ data: findProduct });
   }
 
   /**
@@ -56,15 +56,15 @@ class ProductController {
    *@return {Object} returns an object
    */
   static updateProduct(req, res) {
-    const prodFind = productResponse.find(c => c.id === parseInt(req.params.productId, 10));
+    const findProduct = productResponse.find(c => c.id === parseInt(req.params.productId, 10));
 
-    if (!prodFind) {
+    if (!findProduct) {
       return res.status(404).json({ status: 404, message: 'product not found' });
     }
 
-    prodFind.name = req.body.name;
+    findProduct.name = req.body.name;
 
-    return res.json({ data: prodFind, message: 'product updated' });
+    return res.json({ data: findProduct, message: 'product updated' });
   }
 
   /**
@@ -75,15 +75,15 @@ class ProductController {
    * @return {Object} returns an object
    */
   static deleteProduct(req, res) {
-    const prodFind = productResponse.find(c => c.id === parseInt(req.params.productId, 10));
-    if (!prodFind) {
+    const findProduct = productResponse.find(c => c.id === parseInt(req.params.productId, 10));
+    if (!findProduct) {
       return res.status(404).json({ status: 404, error: 'product not found' });
     }
 
-    const findIndex = productResponse.indexOf(prodFind);
+    const findIndex = productResponse.indexOf(findProduct);
     productResponse.splice(findIndex, 1);
 
-    return res.json({ data: prodFind, message: 'product was deleted' });
+    return res.json({ data: findProduct, message: 'product was deleted' });
   }
 }
 
